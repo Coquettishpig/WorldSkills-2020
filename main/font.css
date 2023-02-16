@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'ptsans';
+    src: url("../第三批/Fonts/ptsans.woff");
+}
+
+@font-face {
+    font-family: 'pacifico';
+    src: url("../第三批/Fonts/pacifico.woff");
+}
+
+.font-white {
+    color: #fff;
+    font-family: 'ptsans';
+}
+
+.font-grey {
+    color: #868686;
+    font-family: 'ptsans';
+}
+
+.font-grey:nth-child(3) {
+    color: #868686;
+    font-family: 'ptsans';
+    float: right;
+}
