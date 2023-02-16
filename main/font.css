@@ -27,5 +27,10 @@
 .font-red {
     color: #dc001e;
     font-family: 'ptsans';
-    line-height: 130px;
+}
+
+.font-white-pacifico {
+    color: #fff;
+    font-family: 'pacifico';
+    font-size: 42px;
 }

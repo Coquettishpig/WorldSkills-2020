@@ -21,35 +21,57 @@ body {
 
 .top-Select-block {
     margin:0 auto;
-    width: 75%;
+    width: 78%;
     height: 130px;
     display: flex;
+    align-items: center;
 }
 
 .top-Select-block-left {
     display: flex;
-    width: 25%;
+    width: 33%;
     justify-content: space-between;
 }
 
 .top-Select-block-logo {
-    width: 35%;
+    width: 34%;
     text-align: center;
 }
 
 .top-Select-block-logo img{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .Search-Boxes {
-    line-height: 130px;
-    width: 30%;
+    width: 33%;
+    display: flex;
+    column-gap: 15px;
 }
 
 .Search-Boxes input{
     background:transparent;
     border: 1px solid #ccc;
-    width: 100%;
+    width: 80%;
     height: 25px;
+    box-shadow: -1px -1px 1px #e0e0e0, 1px 1px 1px #fff;
+}
+
+.Search-Boxes a {
+    text-decoration: none;
+}
+
+.top-name-info {
+    background-color: #CC3333;
+    height: 140px;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 3px 3px 0 black inset;
+    border-top: 2px white;
+    border-bottom: 2px white;
+}
+
+.top-name-info-left {
+    margin:0 auto;
+    width: 80%;
 }
