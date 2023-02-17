@@ -73,5 +73,123 @@ body {
 
 .top-name-info-left {
     margin:0 auto;
-    width: 80%;
+    width: 45%;
+}
+
+.top-name-info-right {
+    margin:0 auto;
+    width: 15%;
+}
+
+.top-name-info-right input {
+    width: 100%;
+    height: 60px;
+    background-color: #c00327;
+    border-style: none;
+    border-radius: 5px 5px 5px 5px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 2px 3px 0 #93021e;
+    transition: box-shadow 2s;
+}
+
+.top-name-info-right input:hover {
+    width: 100%;
+    height: 60px;
+    background-color: #c00327;
+    border-style: none;
+    border-radius: 5px 5px 5px 5px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 2px 3px 0 #93021e inset;
+}
+
+.top-name-info-right input:active {
+    width: 100%;
+    height: 60px;
+    background-color: #c00327;
+    border-style: none;
+    border-radius: 5px 5px 5px 5px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 6px 6px 0 #93021e inset;
+}
+
+/*sidebar*/
+.main-content {
+    width: 63%;
+    margin: 0 0 0 10%;
+}
+
+.Limited-Discount {
+    width: 100%;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.Item-Description {
+    width: 100%;
+    font-family: 'ptsans';
+    margin: 0 auto;
+    word-break: break-all;
+}
+
+.Item-Description img {
+    float: right;
+    width: 180px;
+    height: 180px;
+    margin: 15px;
+    border-radius: 5%;
+}
+
+.main-previews {
+    width: 63%;
+    margin: 0 0 0 10%;
+}
+
+.previews {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.more-previews {
+    width: 45%;
+    background-color: #fac7d2;
+    border-radius: 3%;
+    height: 80px;
+}
+
+/*分辨率为720时*/
+@media screen and (max-width: 720px) {
+    .main-content {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+/*小于700就跑路*/
+@media screen and (max-width: 700px) {
+    * {
+        background-color: #dc001e;
+    }
+
+    body .run {
+        display: flex;
+    }
+
+    header {
+        display: none;
+    }
+
+    aside {
+        display: none;
+    }
+}
+
+.run {
+    display: none;
 }
