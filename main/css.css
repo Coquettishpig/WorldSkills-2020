@@ -153,6 +153,7 @@ body {
 .previews {
     display: flex;
     justify-content: space-between;
+    height: 115px;
 }
 
 
@@ -161,6 +162,17 @@ body {
     background-color: #fac7d2;
     border-radius: 3%;
     height: 80px;
+}
+
+.Top-Reviews {
+    width: 63%;
+    margin: 0 0 0 10%;
+}
+
+.reviews {
+    display: flex;
+    height: 60px;
+    padding-top: 10px;
 }
 
 /*分辨率为720时*/

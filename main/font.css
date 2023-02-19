@@ -77,3 +77,30 @@
     display: flex;
     align-items: center;
 }
+
+.Top-Reviews .font-black {
+    color: #000;
+    font-family: 'pacifico';
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.grey-QuotationMarks {
+    color: #dddddd;
+    font-family: 'ptsans';
+    font-size: 180px;
+    position: relative;
+    z-index: 999;
+    top: -40px;
+}
+
+.reviews p {
+    color: #696969;
+    font-style: oblique;
+    align-items: center;
+    display: flex;
+    word-break:break-all;
+}
