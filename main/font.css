@@ -93,7 +93,6 @@
     font-family: 'ptsans';
     font-size: 180px;
     position: relative;
-    z-index: 999;
     top: -40px;
 }
 
@@ -103,4 +102,45 @@
     align-items: center;
     display: flex;
     word-break:break-all;
+}
+
+.about .font-black {
+    color: #000;
+    font-family: 'pacifico';
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.about .font-black-small {
+    width: 60%;
+    color: #000;
+    font-family: 'ptsans';
+    text-align: justify;
+    font-size: 14px;
+}
+
+.grey-line {
+    width: 60%;
+    border-bottom: 1px dashed #696969;
+    height: 20px;
+}
+
+.Recommends .font-black {
+    color: #000;
+    font-family: 'pacifico';
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.recommends-img p {
+    color: #000;
+    text-align: center;
+    width: 60%;
+    font-size: 10px;
 }

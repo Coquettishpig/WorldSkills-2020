@@ -94,31 +94,23 @@ body {
 }
 
 .top-name-info-right input:hover {
-    width: 100%;
-    height: 60px;
-    background-color: #c00327;
-    border-style: none;
-    border-radius: 5px 5px 5px 5px;
-    color: #fff;
-    font-weight: bold;
     box-shadow: 0 2px 3px 0 #93021e inset;
 }
 
 .top-name-info-right input:active {
-    width: 100%;
-    height: 60px;
-    background-color: #c00327;
-    border-style: none;
-    border-radius: 5px 5px 5px 5px;
-    color: #fff;
-    font-weight: bold;
     box-shadow: 0 6px 6px 0 #93021e inset;
 }
 
 /*sidebar*/
-.main-content {
+
+aside {
     width: 63%;
+    float: left;
     margin: 0 0 0 10%;
+}
+
+.main-content {
+    width: 100%;
 }
 
 .Limited-Discount {
@@ -135,19 +127,19 @@ body {
     font-family: 'ptsans';
     margin: 0 auto;
     word-break: break-all;
+    text-align: justify;
 }
 
 .Item-Description img {
     float: right;
-    width: 180px;
-    height: 180px;
-    margin: 15px;
+    width: 206.88px;
+    height: 206.88px;
+    margin: 0 12px 12px 12px;
     border-radius: 5%;
 }
 
 .main-previews {
-    width: 63%;
-    margin: 0 0 0 10%;
+    width: 100%;
 }
 
 .previews {
@@ -165,14 +157,76 @@ body {
 }
 
 .Top-Reviews {
-    width: 63%;
-    margin: 0 0 0 10%;
+    width: 100%;
 }
 
 .reviews {
     display: flex;
     height: 60px;
     padding-top: 10px;
+}
+
+/*content*/
+main {
+    width: 25%;
+    float: right;
+}
+
+/*右边侧栏*/
+.about-board {
+    width: 100%;
+    align-items: center;
+}
+
+.recommends-img img {
+    width: 60%;
+    height: 60%;
+    border-radius: 5%;
+    margin-top: 10px;
+}
+
+footer {
+    clear: both;
+}
+
+.bottom-footer-color {
+    background-color: #cccccc;
+}
+
+.bottom-footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 500px 400px 300px;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+.follow-us {
+
+}
+
+.Nemsletter {
+    word-break: break-all;
+    text-align: justify;
+    width: 270px;
+}
+
+.Nemsletter .Search-Boxes {
+    width: 270px;
+}
+
+.Nemsletter .Search-Boxes input:nth-child(1){
+    background-color: #fff;
+    width: 100%;
+}
+
+.Nemsletter .Search-Boxes input:nth-child(2){
+    background-color: #fff;
+}
+
+.Refund-Policy {
+    word-break: break-all;
+    text-align: justify;
 }
 
 /*分辨率为720时*/
@@ -198,6 +252,10 @@ body {
     }
 
     aside {
+        display: none;
+    }
+
+    main {
         display: none;
     }
 }
