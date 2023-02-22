@@ -46,7 +46,7 @@ body {
 .Search-Boxes {
     width: 33%;
     display: flex;
-    column-gap: 15px;
+    column-gap: 4px;
 }
 
 .Search-Boxes input{
@@ -57,8 +57,23 @@ body {
     box-shadow: -1px -1px 1px #e0e0e0, 1px 1px 1px #fff;
 }
 
-.Search-Boxes a {
-    text-decoration: none;
+.Search-Boxes button {
+    font-size: 10px;
+    align-items: center;
+    height: 26px;
+    border: none;
+    width: 15%;
+}
+
+.Search-Boxes input:focus {
+    background-color: #fefefe;
+    outline: none;
+}
+
+.Search-Boxes input:focus + button{
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    box-shadow: -1px -1px 1px #e0e0e0, 1px 1px 1px #fff;
 }
 
 .top-name-info {
@@ -130,13 +145,14 @@ aside {
     text-align: justify;
 }
 
-.Item-Description img {
-    float: right;
-    width: 206.88px;
-    height: 206.88px;
-    margin: 0 12px 12px 12px;
-    border-radius: 5%;
-}
+/*.Item-Description img {*/
+/*    float: right;*/
+/*    width: 206.88px;*/
+/*    height: 206.88px;*/
+/*    margin: 0 12px 12px 12px;*/
+/*    border-radius: 5%;*/
+/*    transition: all 1s;*/
+/*}*/
 
 .main-previews {
     width: 100%;
@@ -195,38 +211,72 @@ footer {
 
 .bottom-footer {
     width: 100%;
-    display: grid;
-    grid-template-columns: 500px 400px 300px;
-    justify-items: center;
     margin: 0 auto;
+    display: flex;
 }
 
 .follow-us {
-
+    width: 30%;
+    margin: 0 0 0 10%;
 }
 
 .Nemsletter {
     word-break: break-all;
     text-align: justify;
-    width: 270px;
+    width: 20%;
+    border-style: none;
 }
 
-.Nemsletter .Search-Boxes {
-    width: 270px;
-}
-
-.Nemsletter .Search-Boxes input:nth-child(1){
-    background-color: #fff;
+.Nemsletter .Email-Boxes {
     width: 100%;
 }
 
-.Nemsletter .Search-Boxes input:nth-child(2){
+.Nemsletter .Email-Boxes input{
     background-color: #fff;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 30px;
+}
+
+.Subscribe input{
+    margin-top: 10px;
+    background-color: #dddddd;
+    width: 100%;
+    height: 30px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    box-shadow: 0 3px 5px #868686;
 }
 
 .Refund-Policy {
+    width: 20%;
     word-break: break-all;
     text-align: justify;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.black-bottom {
+    display: flex;
+    background-color: black;
+    height: 30px;
+    justify-content: space-between;
+}
+
+.black-bottom p {
+    color: #fff;
+    align-items: center;
+    display: flex;
+}
+
+.black-bottom p:nth-child(1) {
+    margin: 0 0 0 10%;
+}
+
+.black-bottom p:nth-child(2) {
+    margin: 0 10% 0 0;
 }
 
 /*分辨率为720时*/
