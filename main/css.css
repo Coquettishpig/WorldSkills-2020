@@ -126,6 +126,7 @@ aside {
 
 .main-content {
     width: 100%;
+    height: 300px;
 }
 
 .Limited-Discount {
@@ -194,11 +195,8 @@ main {
     align-items: center;
 }
 
-.recommends-img img {
-    width: 60%;
-    height: 60%;
-    border-radius: 5%;
-    margin-top: 10px;
+.Recommends {
+    height: 180px;
 }
 
 footer {
