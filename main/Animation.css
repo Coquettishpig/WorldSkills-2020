@@ -1,30 +1,83 @@
 .backside-img{
     position: relative;
     margin: 0 12px 12px 12px;
-    width: 206.88px;
-    height: 206.88px;
+    width: 225px;
+    height: 225px;
     float: right;
+    transform-style: preserve-3d;
+    /*景深*/
+    perspective: 1000px;
 }
 
-.backside-img img {
+.backside-img img,.side-text,.img-sticker{
     position: absolute;
-    border-radius: 5%;
     left: 0;
     top: 0;
-    transition: all 1s;
-}
-
-.backside-img img:first-child {
-    z-index: 9;
+    transition: all 2s;
     backface-visibility: hidden;
 }
 
-.backside-img img:last-child {
-    /*filter: drop-shadow(40px 40px yellow);*/
+.side-text {
+    z-index: -1;
+    background-image: url("../第三批/Effects/disc-cover.png"), linear-gradient(#d5d5d5, #d5d5d5);
+    width: 225px;
+    height: 225px;
+    border-radius: 5%;
+    background-blend-mode: overlay;
+    background-size: cover;
+    border: 1px solid black;
 }
 
-.backside-img:hover img{
-    transform: rotateY(180deg);
+.img-sticker {
+    z-index: 1;
+    background-image: url("../第三批/Effects/disc-cover.png");
+    width: 225px;
+    height: 225px;
+    border-radius: 5%;
+}
+
+.backside-img:hover .img-sticker{
+    animation: Img-flip;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    perspective: 100px;
+}
+
+.backside-img:hover .side-text {
+    animation: text-flip;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    perspective: 1000px;
+}
+
+@keyframes text-flip {
+    0% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes Img-flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(-180deg);
+    }
+}
+
+.onsale {
+    position: absolute;
+    width: 60px;
+    height: 0;
+    border-bottom: 25px solid #fe0000;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transform: rotateZ(-45deg);
+    margin-left: -25px;
+    margin-top: 1.45em;
 }
 
 .recommends-img{

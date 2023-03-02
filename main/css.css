@@ -165,12 +165,52 @@ aside {
     height: 115px;
 }
 
-
 .more-previews {
     width: 45%;
     background-color: #fac7d2;
     border-radius: 3%;
     height: 80px;
+}
+
+.more-previews .sticker {
+    position: absolute;
+    width: 40px;
+    height: 0;
+    border-bottom: 15px solid #fe0000;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    transform: rotateZ(-45deg);
+    margin-left: -15px;
+    margin-top: 12px;
+}
+
+.play-button {
+    width: 25%;
+    height: 100%;
+    float: left;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin-left: 5%;
+}
+
+.play-button .round {
+    width: 70%;
+    height: 75%;
+    float: left;
+    background-color: #dc001e;
+    border-radius: 50%;
+    margin-left: 15%;
+}
+
+.play-button .triangles {
+    border-style: solid;
+    border-color: transparent;
+    border-width: 15px 0 15px 25px;
+    border-left-color: #fff;
+    position: absolute;
+    margin-left: 40%;
 }
 
 .Top-Reviews {
